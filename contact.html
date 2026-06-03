@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <header role="banner">
     <div class="container">
       <h1>Contact</h1>
@@ -37,7 +38,8 @@
 
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required aria-required="true">
+          <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-help">
+          <small id="email-help">Enter a valid email address.</small>
         </div>
 
         <div class="form-group">

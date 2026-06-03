@@ -27,4 +27,13 @@ This repository contains a multi-page portfolio website built with semantic HTML
 ## Notes
 
 - Add a profile image at `images/profile.jpg` if you want to include visuals.
-- The contact form is accessible and can be connected to a backend or form service later.
+- The contact form includes validation help text and is keyboard accessible.
+
+## Screenshot and Live Demo
+
+- Screenshot: Add a screenshot of the homepage here when available.
+- Live demo: `https://vi-ja.github.io/web-d-A-/`
+
+## Submission
+
+Submit the GitHub repository link and the GitHub Pages live demo URL.
