@@ -31,8 +31,13 @@ This repository contains a multi-page portfolio website built with semantic HTML
 
 ## Screenshot and Live Demo
 
-- Screenshot: Add a screenshot of the homepage here when available.
-- Live demo: `https://vi-ja.github.io/web-d-A-/`
+- Screenshot: Add a screenshot of the homepage at `images/screenshot-home.png` when available and embed it like this:
+
+	![Homepage screenshot](images/screenshot-home.png)
+
+- Live demo: https://vi-ja.github.io/web-d-A-/
+
+- Repository: https://github.com/vi-ja/web-d-A-.git
 
 ## Submission
 
