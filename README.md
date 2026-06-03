@@ -9,7 +9,7 @@ This repository contains a multi-page portfolio website built with semantic HTML
 - `projects.html` — Projects
 - `contact.html` — Contact form
 - `css/style.css` — Shared stylesheet
-- `images/` — Image assets (add `profile.jpg` here)
+- `images/` — Image assets (add `profile.jpg` here). A placeholder `images/profile.svg` has been added.
 
 ## Accessibility and SEO
 
