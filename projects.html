@@ -1,49 +1,144 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vijay Kumar | Projects</title>
-  <meta name="description" content="Portfolio website of Vijay Kumar">
-  <meta name="keywords" content="Portfolio, HTML5, CSS, Web Developer">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Projects | Vijay Kumar | Web Developer & Accessibility Expert</title>
+  <meta name="description" content="Explore Vijay Kumar's featured projects showcasing semantic HTML5, accessible design, and WCAG compliance. From portfolio templates to interactive landing pages.">
+  <meta name="keywords" content="Projects, Portfolio, Web Development, HTML5, CSS, Accessibility, WCAG, Responsive Design">
   <meta name="author" content="Vijay Kumar">
+  <meta name="theme-color" content="#004a99">
+  <meta name="color-scheme" content="light dark">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://vijayportfolio.com/projects.html">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vijayportfolio.com/projects.html">
+  <meta property="og:title" content="Projects | Vijay Kumar | Web Developer & Accessibility Expert">
+  <meta property="og:description" content="Explore Vijay Kumar's featured projects showcasing semantic HTML5, accessible design, and WCAG compliance.">
+  <meta property="og:image" content="https://vijayportfolio.com/images/og-image.png">
+  <meta property="og:image:alt" content="Vijay Kumar's projects">
+  <meta property="og:site_name" content="Vijay Kumar's Portfolio">
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://vijayportfolio.com/projects.html">
+  <meta name="twitter:title" content="Projects | Vijay Kumar | Web Developer & Accessibility Expert">
+  <meta name="twitter:description" content="Explore Vijay Kumar's featured projects showcasing semantic HTML5, accessible design, and WCAG compliance.">
+  <meta name="twitter:image" content="https://vijayportfolio.com/images/twitter-image.png">
+  
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="stylesheet" href="css/style.css">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Projects",
+    "url": "https://vijayportfolio.com/projects.html",
+    "hasPart": [
+      {
+        "@type": "CreativeWork",
+        "name": "Accessible Portfolio Template",
+        "description": "Built a semantic website skeleton with WCAG-friendly navigation, form controls, and section landmarks."
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Interactive Landing Page",
+        "description": "Developed a responsive landing page with optimized metadata, strong heading structure, and clear calls to action."
+      }
+    ]
+  }
+  </script>
 </head>
-<body>
+<body class="site-shell">
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  <header role="banner">
-    <div class="container">
-      <h1>Projects</h1>
-      <nav role="navigation" aria-label="Projects page navigation">
+  
+  <header role="banner" aria-label="Site header">
+    <div class="container header-row">
+      <div class="brand-block">
+        <h1>Projects</h1>
+      </div>
+      <nav aria-label="Main site navigation" role="navigation">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">🌙 Dark</button></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="main-content">
-    <section aria-labelledby="projects-heading">
+  <main id="main-content" class="page-projects" role="main" aria-label="Main content">
+    <div class="container main-stack">
+    <section aria-labelledby="projects-heading" class="projects-section">
       <h2 id="projects-heading">Featured Work</h2>
-      <article>
-        <h3>Accessible Portfolio Template</h3>
-        <p>Built a semantic website skeleton with WCAG-friendly navigation, form controls, and section landmarks.</p>
-      </article>
-      <article>
-        <h3>Interactive Landing Page</h3>
-        <p>Developed a responsive landing page with optimized metadata, strong heading structure, and clear calls to action.</p>
-      </article>
+      <p>Explore my projects showcasing modern web development practices with emphasis on accessibility and semantic markup.</p>
+      <div class="projects-grid">
+        <article aria-labelledby="project-1-title">
+          <div class="card-icon" aria-hidden="true">🛠️</div>
+          <h3 id="project-1-title">Accessible Portfolio Template</h3>
+          <p>Built a semantic website skeleton with WCAG-friendly navigation, form controls, and section landmarks. This project demonstrates proper use of HTML5 semantic tags and ARIA attributes.</p>
+          <div class="project-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">WAI-ARIA</span>
+            <span class="tag">WCAG 2.1</span>
+          </div>
+          <a href="#" class="project-link" aria-label="View Accessible Portfolio Template project">View Project</a>
+        </article>
+        <article aria-labelledby="project-2-title">
+          <div class="card-icon" aria-hidden="true">🚀</div>
+          <h3 id="project-2-title">Interactive Landing Page</h3>
+          <p>Developed a responsive landing page with optimized metadata, strong heading structure, and clear calls to action. Includes comprehensive SEO implementation and accessibility compliance.</p>
+          <div class="project-tags">
+            <span class="tag">CSS Grid</span>
+            <span class="tag">Flexbox</span>
+            <span class="tag">SEO</span>
+          </div>
+          <a href="#" class="project-link" aria-label="View Interactive Landing Page project">View Project</a>
+        </article>
+      </div>
     </section>
+    </div>
   </main>
 
-  <footer role="contentinfo">
+  <footer role="contentinfo" aria-label="Site footer">
     <div class="container">
-      <p>© 2026 Vijay Kumar. Projects designed for accessibility and clarity.</p>
+      <p>&copy; 2026 Vijay Kumar. Projects designed for accessibility and clarity.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </footer>
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+      document.documentElement.setAttribute('data-theme', theme);
+
+      const button = document.getElementById('themeToggle');
+      if (button) {
+        button.textContent = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        button.addEventListener('click', () => {
+          const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', nextTheme);
+          localStorage.setItem('portfolio-theme', nextTheme);
+          button.textContent = nextTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+          button.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+        });
+        button.setAttribute('aria-pressed', String(theme === 'dark'));
+      }
+    })();
+  </script>
 </body>
 </html>

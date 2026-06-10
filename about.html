@@ -1,58 +1,139 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vijay Kumar | About Me</title>
-  <meta name="description" content="Portfolio website of Vijay Kumar">
-  <meta name="keywords" content="Portfolio, HTML5, CSS, Web Developer">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About Vijay Kumar | Web Developer & Accessibility Expert</title>
+  <meta name="description" content="Learn about Vijay Kumar, a passionate web developer specializing in accessible, semantic websites with a focus on WCAG compliance and modern standards.">
+  <meta name="keywords" content="About, Web Developer, HTML5, CSS, Accessibility, WCAG, Semantic HTML, Experience">
   <meta name="author" content="Vijay Kumar">
+  <meta name="theme-color" content="#004a99">
+  <meta name="color-scheme" content="light dark">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://vijayportfolio.com/about.html">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vijayportfolio.com/about.html">
+  <meta property="og:title" content="About Vijay Kumar | Web Developer & Accessibility Expert">
+  <meta property="og:description" content="Learn about Vijay Kumar, a passionate web developer specializing in accessible, semantic websites with a focus on WCAG compliance and modern standards.">
+  <meta property="og:image" content="https://vijayportfolio.com/images/og-image.png">
+  <meta property="og:image:alt" content="Vijay Kumar's about page">
+  <meta property="og:site_name" content="Vijay Kumar's Portfolio">
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://vijayportfolio.com/about.html">
+  <meta name="twitter:title" content="About Vijay Kumar | Web Developer & Accessibility Expert">
+  <meta name="twitter:description" content="Learn about Vijay Kumar, a passionate web developer specializing in accessible, semantic websites with a focus on WCAG compliance and modern standards.">
+  <meta name="twitter:image" content="https://vijayportfolio.com/images/twitter-image.png">
+  
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="stylesheet" href="css/style.css">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vijay Kumar",
+    "url": "https://vijayportfolio.com",
+    "image": "https://vijayportfolio.com/images/profile.svg",
+    "jobTitle": "Web Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Self-employed"
+    }
+  }
+  </script>
 </head>
-<body>
+<body class="site-shell">
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  <header role="banner">
-    <div class="container">
-      <h1>About Me</h1>
-      <nav role="navigation" aria-label="Secondary site navigation">
+  
+  <header role="banner" aria-label="Site header">
+    <div class="container header-row">
+      <div class="brand-block">
+        <h1>About Me</h1>
+      </div>
+      <nav aria-label="Main site navigation" role="navigation">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
+          <li><a href="about.html" aria-current="page">About Me</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">🌙 Dark</button></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="main-content">
-    <section aria-labelledby="about-heading">
-      <h2 id="about-heading">Hello, I'm Vijay</h2>
-      <figure class="profile-card">
-        <img src="images/profile.svg" alt="Vijay Kumar profile photo">
-        <figcaption>Vijay Kumar</figcaption>
-      </figure>
-      <p>I am a passionate web developer specializing in accessible, semantic websites. I believe strong structure and clear navigation create the best user experiences.</p>
+  <main id="main-content" class="page-about" role="main" aria-label="Main content">
+    <div class="container main-stack">
+    <section aria-labelledby="about-heading" class="about-section">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 id="about-heading">Hello, I'm Vijay</h2>
+          <p>I am a passionate web developer specializing in accessible, semantic websites. I believe strong structure and clear navigation create the best user experiences for everyone, regardless of their abilities or the devices they use.</p>
+        </div>
+        <figure class="profile-card" aria-label="Profile information">
+          <div class="profile-glow"></div>
+          <img src="images/profile.svg" alt="Vijay Kumar profile photo" width="200" height="200">
+          <figcaption>Vijay Kumar</figcaption>
+        </figure>
+      </div>
     </section>
 
     <section aria-labelledby="experience-heading">
       <h2 id="experience-heading">Experience</h2>
-      <article>
-        <h3>Front-end Development</h3>
-        <p>Creating responsive and accessible interfaces using HTML5, CSS, and best practices for usability.</p>
-      </article>
-      <article>
-        <h3>SEO-friendly Websites</h3>
-        <p>Writing clean markup and optimized metadata to help websites rank and perform better.</p>
-      </article>
+      <div class="experience-grid">
+        <article aria-labelledby="frontend-title">
+          <div class="card-icon" aria-hidden="true">💻</div>
+          <h3 id="frontend-title">Front-end Development</h3>
+          <p>Creating responsive and accessible interfaces using HTML5, CSS, and best practices for usability. I prioritize semantic markup and proper ARIA implementation for maximum accessibility.</p>
+        </article>
+        <article aria-labelledby="seo-title">
+          <div class="card-icon" aria-hidden="true">📈</div>
+          <h3 id="seo-title">SEO-friendly Websites</h3>
+          <p>Writing clean markup and optimized metadata to help websites rank and perform better. I implement JSON-LD structured data and comprehensive meta tags for improved search visibility.</p>
+        </article>
+      </div>
     </section>
+    </div>
   </main>
 
-  <footer role="contentinfo">
+  <footer role="contentinfo" aria-label="Site footer">
     <div class="container">
-      <p>© 2026 Vijay Kumar. Semantic HTML5 and accessibility first.</p>
+      <p>&copy; 2026 Vijay Kumar. Semantic HTML5 and accessibility first.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </footer>
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+      document.documentElement.setAttribute('data-theme', theme);
+
+      const button = document.getElementById('themeToggle');
+      if (button) {
+        button.textContent = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        button.addEventListener('click', () => {
+          const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', nextTheme);
+          localStorage.setItem('portfolio-theme', nextTheme);
+          button.textContent = nextTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+          button.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+        });
+        button.setAttribute('aria-pressed', String(theme === 'dark'));
+      }
+    })();
+  </script>
 </body>
 </html>

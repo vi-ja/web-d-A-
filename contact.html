@@ -1,62 +1,170 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vijay Kumar | Contact</title>
-  <meta name="description" content="Portfolio website of Vijay Kumar">
-  <meta name="keywords" content="Portfolio, HTML5, CSS, Web Developer">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact | Vijay Kumar | Web Developer & Accessibility Expert</title>
+  <meta name="description" content="Get in touch with Vijay Kumar for your web development and accessibility needs. Contact form for inquiries about accessible website design and semantic HTML5 projects.">
+  <meta name="keywords" content="Contact, Get in Touch, Web Developer, Accessibility, WCAG, HTML5, Portfolio">
   <meta name="author" content="Vijay Kumar">
+  <meta name="theme-color" content="#004a99">
+  <meta name="color-scheme" content="light dark">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://vijayportfolio.com/contact.html">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vijayportfolio.com/contact.html">
+  <meta property="og:title" content="Contact | Vijay Kumar | Web Developer & Accessibility Expert">
+  <meta property="og:description" content="Get in touch with Vijay Kumar for your web development and accessibility needs.">
+  <meta property="og:image" content="https://vijayportfolio.com/images/og-image.png">
+  <meta property="og:image:alt" content="Vijay Kumar's contact page">
+  <meta property="og:site_name" content="Vijay Kumar's Portfolio">
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://vijayportfolio.com/contact.html">
+  <meta name="twitter:title" content="Contact | Vijay Kumar | Web Developer & Accessibility Expert">
+  <meta name="twitter:description" content="Get in touch with Vijay Kumar for your web development and accessibility needs.">
+  <meta name="twitter:image" content="https://vijayportfolio.com/images/twitter-image.png">
+  
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="stylesheet" href="css/style.css">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Vijay Kumar",
+    "url": "https://vijayportfolio.com/contact.html",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service"
+    }
+  }
+  </script>
 </head>
-<body>
+<body class="site-shell">
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  <header role="banner">
-    <div class="container">
-      <h1>Contact</h1>
-      <nav role="navigation" aria-label="Contact page navigation">
+  
+  <header role="banner" aria-label="Site header">
+    <div class="container header-row">
+      <div class="brand-block">
+        <h1>Contact</h1>
+      </div>
+      <nav aria-label="Main site navigation" role="navigation">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">🌙 Dark</button></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="main-content">
-    <section aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Get in Touch</h2>
-      <p>If you have a project or opportunity, please reach out using the form below.</p>
-
-      <form aria-label="Contact Form" class="contact-form">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required aria-required="true">
+  <main id="main-content" class="page-contact" role="main" aria-label="Main content">
+    <div class="container main-stack">
+    <section aria-labelledby="contact-heading" class="contact-section">
+      <div class="contact-grid">
+        <div class="contact-info-block">
+          <h2 id="contact-heading">Get in Touch</h2>
+          <p class="contact-intro">If you have a project or opportunity, please reach out using the accessible form or contact details. All fields are required.</p>
+          
+          <div class="info-card glass-card">
+            <h3>Direct Contact</h3>
+            <p><strong>Email:</strong> <a href="mailto:vijay.kumar@example.com">vijay.kumar@example.com</a></p>
+            <p><strong>Location:</strong> New Delhi, India</p>
+            <p><strong>Availability:</strong> Freelance, Full-time</p>
+          </div>
+          
+          <div class="info-card glass-card">
+            <h3>Response Time</h3>
+            <p>I typically reply within 24–48 hours on business days. Looking forward to working together!</p>
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-help">
-          <small id="email-help">Enter a valid email address.</small>
-        </div>
+        <div class="contact-form-block">
+          <form aria-label="Contact Form" class="contact-form" method="POST" action="#" novalidate>
+            <!-- Alert for form errors (initially hidden) -->
+            <div id="form-errors" role="alert" aria-live="polite" class="form-errors" style="display: none;"></div>
 
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
-        </div>
+            <div class="form-group">
+              <label for="name">Full Name <span aria-label="required">*</span></label>
+              <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-help" placeholder="Enter your full name">
+              <small id="name-help">Enter your first and last name.</small>
+            </div>
 
-        <button type="submit">Send</button>
-      </form>
+            <div class="form-group">
+              <label for="email">Email Address <span aria-label="required">*</span></label>
+              <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-help" placeholder="your.email@example.com">
+              <small id="email-help">Enter a valid email address so I can respond to you.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject <span aria-label="required">*</span></label>
+              <select id="subject" name="subject" required aria-required="true" aria-describedby="subject-help">
+                <option value="">-- Please select a subject --</option>
+                <option value="general">General Inquiry</option>
+                <option value="project">Project Proposal</option>
+                <option value="accessibility">Accessibility Consultation</option>
+                <option value="other">Other</option>
+              </select>
+              <small id="subject-help">Select the subject of your inquiry.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span aria-label="required">*</span></label>
+              <textarea id="message" name="message" rows="5" required aria-required="true" aria-describedby="message-help" placeholder="Please provide details about your inquiry..."></textarea>
+              <small id="message-help">Provide a detailed message about your inquiry.</small>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Send Message</button>
+              <button type="reset" class="btn-secondary">Clear Form</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
+    </div>
   </main>
 
-  <footer role="contentinfo">
+  <footer role="contentinfo" aria-label="Site footer">
     <div class="container">
-      <p>© 2026 Vijay Kumar. Reach out for accessible web work.</p>
+      <p>&copy; 2026 Vijay Kumar. Reach out for accessible web work.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
     </div>
   </footer>
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+      document.documentElement.setAttribute('data-theme', theme);
+
+      const button = document.getElementById('themeToggle');
+      if (button) {
+        button.textContent = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        button.addEventListener('click', () => {
+          const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', nextTheme);
+          localStorage.setItem('portfolio-theme', nextTheme);
+          button.textContent = nextTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+          button.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+        });
+        button.setAttribute('aria-pressed', String(theme === 'dark'));
+      }
+    })();
+  </script>
 </body>
 </html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modern, responsive portfolio of Vijay Kumar with accessible design, CSS Grid, Flexbox and a light/dark theme.">
+  <meta name="theme-color" content="#0f172a">
+  <title>Vijay Kumar | Responsive Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site-shell">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand-block">
+        <p class="eyebrow">Portfolio / Creative Developer</p>
+        <h1>Vijay Kumar</h1>
+        <p class="tagline">Crafting polished, accessible, responsive web experiences with modern CSS architecture.</p>
+      </div>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">🌙 Dark</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-portfolio">
+    <div class="container main-stack">
+      <section class="hero glass-panel" aria-labelledby="hero-title">
+        <article class="hero-copy">
+          <p class="eyebrow accent">Front-end Developer • Accessibility • UI Systems</p>
+          <h2 id="hero-title">A visually rich portfolio built for every screen.</h2>
+          <p>From CSS Grid layouts to flexible components, this portfolio showcases a modern responsive design with a dynamic light/dark mode, clean semantics, and a premium visual language.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Start a Conversation</a>
+          </div>
+        </article>
+
+        <aside class="hero-visual" aria-label="Highlights dashboard">
+          <article class="mini-card glow-card">
+            <span class="chip">Responsive</span>
+            <strong>Mobile-first</strong>
+            <p>Adaptive from 320px to large desktop displays.</p>
+          </article>
+          <article class="mini-card">
+            <span class="chip">Architecture</span>
+            <strong>Grid + Flexbox</strong>
+            <p>Powerful 2D layout design with localized alignment control.</p>
+          </article>
+          <article class="mini-card wide-card">
+            <span class="chip">Theme</span>
+            <strong>Light / Dark</strong>
+            <p>Custom CSS variables and user preference aware theming.</p>
+          </article>
+        </aside>
+      </section>
+
+      <section id="skills" class="glass-panel" aria-labelledby="skills-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-heading">What powers this portfolio</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="feature-card">
+            <h3>CSS Grid</h3>
+            <p>Multi-column layouts and responsive section composition across the entire page.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Flexbox</h3>
+            <p>Elegant control for navigation, chips, actions, and content alignment.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Accessibility</h3>
+            <p>Semantic landmarks, contrast-aware styling, and focus-visible states.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about-grid" aria-labelledby="about-heading">
+        <article class="glass-panel about-copy">
+          <p class="eyebrow">About</p>
+          <h2 id="about-heading">A developer who values structure, performance, and clarity.</h2>
+          <p>I blend interface design, semantic HTML, and modern CSS to create experiences that feel fluid, balanced, and accessible on any device. This portfolio uses a modular visual system with layered gradients, glass panels, and responsive spacing.</p>
+        </article>
+        <aside class="glass-panel profile-panel" aria-label="Profile summary">
+          <img src="../images/profile.svg" alt="Illustrated profile of Vijay Kumar">
+          <p class="profile-label">Current focus</p>
+          <h3>Accessible interfaces with immersive visuals.</h3>
+        </aside>
+      </section>
+
+      <section id="projects" class="glass-panel" aria-labelledby="projects-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-heading">Featured work</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Responsive Portfolio</h3>
+            <p>Fluid layout system with CSS variables, grid, and dark mode theme support.</p>
+            <ul class="tag-list"><li>HTML5</li><li>CSS3</li><li>Responsive</li></ul>
+          </article>
+          <article class="project-card">
+            <h3>Accessible UI Kit</h3>
+            <p>Reusable cards, buttons, and navigation patterns tuned for readability and touch targets.</p>
+            <ul class="tag-list"><li>Flexbox</li><li>WCAG</li><li>Design Tokens</li></ul>
+          </article>
+          <article class="project-card">
+            <h3>Modern Landing Pages</h3>
+            <p>Gradient-backed panels and glassmorphism to create a premium visual presentation.</p>
+            <ul class="tag-list"><li>Animation</li><li>Glass UI</li><li>Theme</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="glass-panel contact-panel" aria-labelledby="contact-heading">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-heading">Let’s build something refined and responsive.</h2>
+          <p>Available for thoughtful front-end work, accessible interfaces, and polished web experiences.</p>
+        </div>
+        <a class="btn btn-primary" href="mailto:hello@vijayportfolio.com">hello@vijayportfolio.com</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© 2026 Vijay Kumar. Responsive portfolio with modern CSS3 architecture.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+      document.documentElement.setAttribute('data-theme', theme);
+      const button = document.getElementById('themeToggle');
+      if (button) {
+        button.textContent = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        button.addEventListener('click', () => {
+          const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', nextTheme);
+          localStorage.setItem('portfolio-theme', nextTheme);
+          button.textContent = nextTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+          button.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+        });
+        button.setAttribute('aria-pressed', String(theme === 'dark'));
+      }
+    })();
+  </script>
+</body>
+</html>

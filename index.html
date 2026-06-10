@@ -1,59 +1,172 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vijay Kumar | Home</title>
-  <meta name="description" content="Portfolio website of Vijay Kumar">
-  <meta name="keywords" content="Portfolio, HTML5, CSS, Web Developer">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vijay Kumar | Web Developer & Accessibility Expert</title>
+  <meta name="description" content="Discover Vijay Kumar's portfolio of semantic HTML5 and accessible websites. Expert in WCAG compliance and modern web standards.">
+  <meta name="keywords" content="Web Developer, HTML5, CSS, Accessibility, WCAG, Semantic HTML, SEO-friendly, Portfolio">
   <meta name="author" content="Vijay Kumar">
+  <meta name="theme-color" content="#004a99">
+  <meta name="color-scheme" content="light dark">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://vijayportfolio.com/">
+  
+  <!-- Open Graph Tags for Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vijayportfolio.com/">
+  <meta property="og:title" content="Vijay Kumar | Web Developer & Accessibility Expert">
+  <meta property="og:description" content="Discover Vijay Kumar's portfolio of semantic HTML5 and accessible websites. Expert in WCAG compliance and modern web standards.">
+  <meta property="og:image" content="https://vijayportfolio.com/images/og-image.png">
+  <meta property="og:image:alt" content="Vijay Kumar's portfolio website">
+  <meta property="og:site_name" content="Vijay Kumar's Portfolio">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://vijayportfolio.com/">
+  <meta name="twitter:title" content="Vijay Kumar | Web Developer & Accessibility Expert">
+  <meta name="twitter:description" content="Discover Vijay Kumar's portfolio of semantic HTML5 and accessible websites. Expert in WCAG compliance and modern web standards.">
+  <meta name="twitter:image" content="https://vijayportfolio.com/images/twitter-image.png">
+  <meta name="twitter:image:alt" content="Vijay Kumar's portfolio website">
+  
+  <!-- Additional SEO Meta Tags -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
   <link rel="stylesheet" href="css/style.css">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vijay Kumar",
+    "url": "https://vijayportfolio.com",
+    "image": "https://vijayportfolio.com/images/profile.svg",
+    "sameAs": [],
+    "jobTitle": "Web Developer",
+    "description": "Web Developer specializing in semantic HTML5 and accessible websites",
+    "knowsAbout": ["Web Development", "HTML5", "CSS", "Accessibility", "WCAG", "SEO"]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Vijay Kumar's Portfolio",
+    "url": "https://vijayportfolio.com",
+    "description": "Semantic HTML5 and accessible portfolio website"
+  }
+  </script>
 </head>
-<body>
+<body class="site-shell">
+  <!-- Skip to main content link for keyboard users -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
-  <header role="banner">
-    <div class="container">
-      <h1>Vijay Kumar</h1>
-      <p class="tagline">Web Developer | Accessible Website Creator</p>
-      <nav role="navigation" aria-label="Main site navigation">
+  
+  <header role="banner" aria-label="Site header">
+    <div class="container header-row">
+      <div class="brand-block">
+        <h1>Vijay Kumar</h1>
+        <p class="tagline" aria-label="Professional tagline">Web Developer | Accessible Website Creator</p>
+      </div>
+      <nav aria-label="Main site navigation" role="navigation">
         <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">🌙 Dark</button></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="main-content">
+  <main id="main-content" class="page-home" role="main" aria-label="Main content">
+    <div class="container main-stack">
     <section aria-labelledby="welcome-heading" class="hero">
-      <h2 id="welcome-heading">Welcome to my portfolio</h2>
-      <p>Hi, I am Vijay Kumar. I build modern, accessible websites using semantic HTML5 and WCAG best practices.</p>
+      <div class="hero-content">
+        <h2 id="welcome-heading">Welcome to my portfolio</h2>
+        <p>Hi, I am Vijay Kumar. I build modern, accessible websites using semantic HTML5 and WCAG best practices.</p>
+        <a href="#skills-heading" class="btn-primary">Explore my work</a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="visual-card stats-card">
+          <div class="card-glow-dot"></div>
+          <span class="stat-number">100%</span>
+          <span class="stat-label">WCAG Access</span>
+        </div>
+        <div class="visual-card rank-card">
+          <span class="rank-letter">A+</span>
+          <span class="rank-label">SEO Performance</span>
+        </div>
+        <div class="visual-card tech-card">
+          <span class="tech-title">Modern Architecture</span>
+          <div class="tech-tags">
+            <span>Grid</span>
+            <span>Flexbox</span>
+            <span>A11y</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section aria-labelledby="skills-heading" class="highlights">
       <h2 id="skills-heading">What I Do</h2>
-      <article>
-        <h3>Accessibility</h3>
-        <p>Designing websites that work for everyone, including keyboard users and screen reader visitors.</p>
-      </article>
-      <article>
-        <h3>Semantic HTML</h3>
-        <p>Using HTML5 structure and ARIA roles to improve clarity, SEO, and usability.</p>
-      </article>
-      <article>
-        <h3>Responsive Design</h3>
-        <p>Building responsive pages that adapt gracefully across devices and screen sizes.</p>
-      </article>
+      <div class="highlights-grid">
+        <article aria-labelledby="accessibility-title">
+          <div class="card-icon" aria-hidden="true">👁️</div>
+          <h3 id="accessibility-title">Accessibility</h3>
+          <p>Designing websites that work for everyone, including keyboard users and screen reader visitors.</p>
+        </article>
+        <article aria-labelledby="semantic-title">
+          <div class="card-icon" aria-hidden="true">🧱</div>
+          <h3 id="semantic-title">Semantic HTML</h3>
+          <p>Using HTML5 structure and ARIA roles to improve clarity, SEO, and usability.</p>
+        </article>
+        <article aria-labelledby="responsive-title">
+          <div class="card-icon" aria-hidden="true">📱</div>
+          <h3 id="responsive-title">Responsive Design</h3>
+          <p>Building responsive pages that adapt gracefully across devices and screen sizes.</p>
+        </article>
+      </div>
     </section>
+    </div>
   </main>
 
-  <footer role="contentinfo">
+  <footer role="contentinfo" aria-label="Site footer">
     <div class="container">
-      <p>© 2026 Vijay Kumar. Built with semantic HTML5 and accessibility in mind.</p>
+      <p>&copy; 2026 Vijay Kumar. Built with semantic HTML5 and accessibility in mind.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </footer>
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('portfolio-theme');
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const theme = savedTheme || systemTheme;
+      document.documentElement.setAttribute('data-theme', theme);
+
+      const button = document.getElementById('themeToggle');
+      if (button) {
+        button.textContent = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+        button.addEventListener('click', () => {
+          const nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', nextTheme);
+          localStorage.setItem('portfolio-theme', nextTheme);
+          button.textContent = nextTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+          button.setAttribute('aria-pressed', String(nextTheme === 'dark'));
+        });
+        button.setAttribute('aria-pressed', String(theme === 'dark'));
+      }
+    })();
+  </script>
 </body>
 </html>
